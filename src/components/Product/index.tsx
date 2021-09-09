@@ -1,6 +1,8 @@
 import { Grid, GridItem } from '@chakra-ui/react';
 import React from 'react';
-
+import ProductDescription from './ProductDescription';
+import ProductOptions from './ProductOptions';
+import ProductPicture from './ProductPicture'
 
 const Product: React.FC = () => {
   return (
@@ -11,9 +13,9 @@ const Product: React.FC = () => {
       columnGap="9"
       rowGap="10"
     >
-      <GridItem rowSpan={2} colSpan={2} bg="tomato" />
-      <GridItem colSpan={1} h={50} bg="tomato" />
-      <GridItem colSpan={1} h={50} bg="tomato" />
+      <GridItem rowSpan={2} colSpan={2}><ProductPicture/></GridItem>
+      <GridItem colSpan={1}><ProductDescription/></GridItem>
+      <GridItem colSpan={1}><ProductOptions/></GridItem>
     </Grid>
   );
 }
