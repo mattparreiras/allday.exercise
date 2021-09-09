@@ -35,8 +35,14 @@ const Product = ({product}:ProductProps) => {
       rowGap="10"
     >
       <GridItem rowSpan={2} colSpan={2}><ProductPicture features={product.features} selectedProduct={selectedProduct}/></GridItem>
-      <GridItem colSpan={1}><ProductDescription/></GridItem>
-      <GridItem colSpan={1}><ProductOptions/></GridItem>
+      <GridItem colSpan={1}><ProductDescription name={product.name} description={product.description} price={product.price} discount={product.discount}/></GridItem>
+      <GridItem colSpan={1}>
+        <ProductOptions 
+          options={product.options} optionDescription={product.optionDescription}
+          optionType={product.optionType} 
+          selectedProduct={selectedProduct} 
+          setSelectedProduct={setSelectedProduct}/>
+      </GridItem>
     </Grid>
   );
 }

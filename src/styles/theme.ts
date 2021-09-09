@@ -8,6 +8,7 @@ export const theme = extendTheme({
     },
     gray:{
       '200':'#E5E5E5',
+      '300':'#E8E8E8',
       '600':'#4B4B4B',
       '700':'#444444'
     }
