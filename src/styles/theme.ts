@@ -7,6 +7,9 @@ export const theme = extendTheme({
       '700':'#444444'
     }
   },
+  fonts:{
+    heading:'Bungee',
+  },
   styles:{
     global:{
       body:{
