@@ -1,13 +1,18 @@
-import { Box } from '@chakra-ui/layout';
+import { Box, Image } from '@chakra-ui/react';
 import React from 'react';
 import ProductFeatures from './Features';
 import ShipmentSecureHeader from './ShipmentSecureHeader';
 
-const ProcuctPicture: React.FC = () => {
+interface ProcuctPictureProps{
+  features:string[];
+  selectedProduct:string;
+}
+const ProcuctPicture = ({features, selectedProduct}:ProcuctPictureProps) => {
   return(
     <Box>
       <ShipmentSecureHeader/>
-      <ProductFeatures features={["assembly","free-shipping","made-in-america","materials","trial","warranty"]}/>
+      <Image src={`images/${selectedProduct}.jpg`} alt={selectedProduct}/>
+      <ProductFeatures features={features}/>
     </Box>
   );
 }

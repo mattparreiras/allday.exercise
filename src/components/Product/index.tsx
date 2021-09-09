@@ -1,10 +1,31 @@
 import { Grid, GridItem } from '@chakra-ui/react';
-import React from 'react';
+import React, {useState} from 'react';
 import ProductDescription from './ProductDescription';
 import ProductOptions from './ProductOptions';
 import ProductPicture from './ProductPicture'
 
-const Product: React.FC = () => {
+
+interface ProductOptionsType{
+  value:string;
+  label:string;
+}
+interface ProductType{
+  name:string;
+  description:string;
+  options:ProductOptionsType[];
+  optionDescription: string;
+  optionType:string;
+  features:string[];
+  discount:number;
+  price:number;
+}
+interface ProductProps{
+  product:ProductType
+}
+
+
+const Product = ({product}:ProductProps) => {
+  const [selectedProduct, setSelectedProduct ] = useState(product.options[0].value)
   return (
     <Grid
       w="100%" maxWidth={1480} mx="auto" mt="6" px="6"
@@ -13,7 +34,7 @@ const Product: React.FC = () => {
       columnGap="9"
       rowGap="10"
     >
-      <GridItem rowSpan={2} colSpan={2}><ProductPicture/></GridItem>
+      <GridItem rowSpan={2} colSpan={2}><ProductPicture features={product.features} selectedProduct={selectedProduct}/></GridItem>
       <GridItem colSpan={1}><ProductDescription/></GridItem>
       <GridItem colSpan={1}><ProductOptions/></GridItem>
     </Grid>
