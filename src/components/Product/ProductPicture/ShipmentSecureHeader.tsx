@@ -4,7 +4,7 @@ import React from 'react';
 
 const ShimentSecureHeader: React.FC = () => {
   return (
-    <Flex align="center" justifyContent="space-between">
+    <Flex align="center" justifyContent="space-between" my='2'>
       <Flex as="span" align="center" >
         <Image src="images/padlock.svg" alt='padlock'/>
         <Text ml="2" fontSize="md">Secure Checkout</Text>
