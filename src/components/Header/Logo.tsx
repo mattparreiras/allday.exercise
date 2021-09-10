@@ -1,7 +1,10 @@
 import { Image } from "@chakra-ui/react";
 
-export default function Logo () {
+interface LogoProps{
+  width:number
+}
+export default function Logo ({width= 320}) {
   return (
-    <Image src="images/logo.svg" alt="Logo"/>
+    <Image src="images/logo.svg" alt="Logo" width={width}/>
   )
 }

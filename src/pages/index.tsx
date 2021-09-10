@@ -1,6 +1,7 @@
 import {Flex} from "@chakra-ui/react";
 import Header from "../components/Header";
 import Product from "../components/Product";
+import Sidebar from "../components/Sidebar";
 
 let sofa = {
   name:"The Sofa",
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <Flex direction="column" h="100vh">
       <Header/>
+      <Sidebar/>
       <Product product={sofa}/>
     </Flex>
   )

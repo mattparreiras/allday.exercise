@@ -11,7 +11,7 @@ const ProcuctPicture = ({features, selectedProduct}:ProcuctPictureProps) => {
   return(
     <Box>
       <ShipmentSecureHeader/>
-      <Image mb="4"src={`images/${selectedProduct}.jpg`} alt={selectedProduct}/>
+      <Box mb="4" bg="gray.50" ><Image  mixBlendMode='multiply' src={`images/${selectedProduct}.jpg`} alt={selectedProduct}/></Box>
       <ProductFeatures features={features}/>
     </Box>
   );
