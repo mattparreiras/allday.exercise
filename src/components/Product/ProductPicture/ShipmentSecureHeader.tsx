@@ -10,7 +10,7 @@ const ShimentSecureHeader: React.FC = () => {
         <Text ml="2" fontSize="md">Secure Checkout</Text>
       </Flex>
 
-      <Text fontSize="md">Ships in 5-7 Business Days</Text>
+      <Text fontSize="md" textAlign="right">Ships in 5-7 Business Days</Text>
     </Flex>
   );
 }

@@ -28,12 +28,12 @@ const Product = ({product}:ProductProps) => {
   const [selectedProduct, setSelectedProduct ] = useState(product.options[0].value)
   return (
     <Box
-      display={{ md: "flex" }}
+      display={{ lg: "flex" }}
       w="100%" maxWidth={1480} mx="auto" mt="6" px="6"
     >
-      <Box flex={{ md: 2 }} mr={{ md: "9" }} mb="10"><ProductPicture features={product.features} selectedProduct={selectedProduct}/></Box>
+      <Box flex={{ lg: 2 }} mr={{ lg: "9" }} mb="10"><ProductPicture features={product.features} selectedProduct={selectedProduct}/></Box>
      
-      <Flex direction="column" flex={{ md: 1 }} >
+      <Flex direction="column" flex={{ lg: 1 }} >
         <Box mb="10"><ProductDescription name={product.name} description={product.description} price={product.price} discount={product.discount}/></Box>
         <Box mb="10">
           <ProductOptions 
