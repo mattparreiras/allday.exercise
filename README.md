@@ -15,18 +15,18 @@ After running open [http://localhost:3000](http://localhost:3000) with your brow
 
 This is an responsive exercise for Barbarian job a
 
-* How long you spent on the assignment.
+### How long you spent on the assignment.
 4 to 5 hours
 
-* What you like about your implementation.
+### What you like about your implementation.
 The implementation already splits the code into components and uses goods tool 
 such as next.js (helps with the SEO) and Chakra UI (helps on buiding design systems for branding)  
 
-* What you would change if you were going to do it again.
+### What you would change if you were going to do it again.
 Ask for a designer opinion on the responsive decisions such as fontsizes on 
-modile and elements that should change (or be removed) as the images below the sofa
+modile and elements that should change (or be removed) as the images below the sofa.
 
-* How you made your design decisions.
+### How you made your design decisions.
 Base on what other websites that are e-commerce
 
 ## Learn More
