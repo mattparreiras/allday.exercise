@@ -19,7 +19,7 @@ const ProductOptions = ({options, optionDescription, optionType, selectedProduct
   
   
   return (
-    <Box>
+    <Box borderTop="2px solid white" pt="5">
       <Text fontFamily="Bungee" color="blue.600">1. Choose a {optionType}</Text>
       <Text mb="8">{optionDescription}</Text>
       <Text mb="3" color="gray.600" fontWeight="700">{optionType} Choices</Text>

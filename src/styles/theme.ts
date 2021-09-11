@@ -16,6 +16,7 @@ export const theme = extendTheme({
   },
   fonts:{
     heading:'Bungee',
+    body:'Raleway'
   },
   styles:{
     global:{
